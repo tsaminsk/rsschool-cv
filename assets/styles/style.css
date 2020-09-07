@@ -5,7 +5,151 @@
 }
 
 html {
-    font-family: serif;
+    font-family: 'Roboto', sans-serif;
     font-size: 16px;
     font-weight: 400;
+}
+
+.container {
+    max-width: 1024px;
+    margin: 0 auto;
+}
+
+.mt-1 {
+    margin-top: 10px;
+}
+
+.header {
+    height: 70px;
+    background-color: #eee;
+    border-bottom: 1px solid #ddd;
+    box-shadow: 0 0 10px 2px rgba(0, 0, 0, .3);
+}
+
+.header__wrapper {
+    position: relative;
+    padding: 0 70px;
+}
+
+.header__logo {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 70px;
+    height: 100%;
+    padding: 10px 0 0 20px;
+    text-align: center;
+}
+
+.header__logo-image {
+    width: 50px;
+}
+
+.header__title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    line-height: 70px;
+    text-align: center;
+}
+
+.cv-main {
+    overflow: hidden;
+}
+
+.cv-main__wrapper {
+    min-height: calc(100vh - 130px);
+    padding: 30px 0 50px;
+    border-left: 1px solid #eee;
+    border-right: 1px solid #eee;
+}
+
+.cv-main__item {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 20px 20px;
+}
+
+.cv-main__item:nth-child(2n) {
+    background-color: #eee;
+}
+
+.cv-main__item:first-child .cv-main__title {
+    margin: 55px 0 0;
+}
+
+.cv-main__title {
+    width: 250px;
+    padding: 25px 0 0;
+}
+
+.cv-main__content {
+    width: calc(100% - 250px);
+    padding: 20px 20px 0 0;
+    text-align: left;
+}
+
+.cv-main__content h1 {
+    font-size: 24px;
+}
+
+.cv-main__content p {
+    line-height: 1.5;
+}
+
+.cv-main__content a {
+    text-decoration: none;
+}
+
+.cv-main__content-image {
+    position: relative;
+    width: 150px;
+    height: 150px;
+    overflow: hidden;
+    border-radius: 50%;
+    box-shadow: 0 0 5px 2px rgba(0,0,0, .2);
+}
+
+.cv-main__content-image img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    transform: translate3d(-50%, -50%, 0);
+}
+
+.cv-main__content-table {
+    width: 400px;
+}
+
+.cv-main__content-table td {
+    height: 27px;
+}
+
+.cv-main__content-list {
+    margin: 0 0 0 20px;
+}
+
+.cv-main__content-list li {
+    margin: 0 0 10px;
+}
+
+.cv-main__content-link a {
+    margin: 0 0 15px;
+    font-size: 18px;
+}
+
+.cv-main__content-title {
+    font-size: 19px;
+    font-weight: 500;
+}
+
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60px;
+    color: #fff;
+    background-color: #555;
 }
